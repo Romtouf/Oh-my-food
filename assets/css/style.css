@@ -3,5 +3,57 @@
   font-family: "Shrikhand", cursive;
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 63px;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.navbar__logo i {
+  margin-left: 23px;
+}
+.navbar__logo img {
+  display: flex;
+  justify-content: center;
+  margin-left: 64.8px;
+  width: 43.2%;
+  height: 44px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  height: 50px;
+}
+.form__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form i {
+  margin-right: 17px;
+}
+.form__place {
+  width: 45%;
+  border: none;
+  background-color: #EAEAEA;
+}
+.form ::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

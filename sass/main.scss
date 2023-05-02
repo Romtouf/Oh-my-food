@@ -3,4 +3,55 @@
     font-family: 'Shrikhand', cursive;
 }
 
-  
+body {
+    box-sizing: border-box ;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 63px;
+    &__logo {
+        display: flex;
+        align-items: center;
+        & i {
+            margin-left: 23px;
+        }
+        & img {
+            display: flex;
+            justify-content: center;
+            margin-left: 64.8px;
+            width: 43.2%;
+            height: 44px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & i {
+        margin-right: 17px;
+    }
+    &__place {
+        width: 45%;
+        border: none;
+        background-color: #EAEAEA;
+    }
+    ::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        opacity: 1;
+    }
+}
