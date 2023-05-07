@@ -14,7 +14,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
+<body id="pages">
     <header>
         <section class="navbar">
             <div class="navbar__logo">
@@ -33,12 +33,13 @@
             <div class="menu__cards">
                 <div class="menu__restaurant">
                     <h1>La palette du goût</h1>
-                    <i class="fa-light fa-heart"></i>
+                    <i class="far fa-heart"></i>
                 </div>
-                <div class="menu__block">
+                <div class="menu__block__entrees">
                     <div class="menu__title">
                         <h2>ENTRÉES</h2>
                     </div>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -52,6 +53,8 @@
                             <p>25€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -65,6 +68,8 @@
                             <p>35€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -78,11 +83,13 @@
                             <p>20€</p>
                         </div>
                     </article>
+                    </a>
                 </div>
-                <div class="menu__block">
+                <div class="menu__block__plats">
                     <div class="menu__title">
                         <h2>PLATS</h2>
                     </div>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -96,6 +103,8 @@
                             <p>40€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -109,6 +118,8 @@
                             <p>35€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -122,11 +133,13 @@
                             <p>44€</p>
                         </div>
                     </article>
+                    </a>
                 </div>
-                <div class="menu__block">
+                <div class="menu__block__desserts">
                     <div class="menu__title">
                         <h2>DESSERTS</h2>
                     </div>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -140,6 +153,8 @@
                             <p>18€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -153,6 +168,8 @@
                             <p>22€</p>
                         </div>
                     </article>
+                    </a>
+                    <a class="menu__link" href="#">
                     <article class="menu__card">
                         <div class="menu__plate">
                             <div class="menu__name">
@@ -166,9 +183,10 @@
                             <p>23€</p>
                         </div>
                     </article>
-                    <div class="menu__button">
-                        <button class="order__button">Commander</button>
-                    </div>
+                    </a>
+                </div>
+                <div class="menu__button">
+                    <button class="order__button">Commander</button>
                 </div>
             </div>
         </section>
@@ -176,15 +194,21 @@
     <footer>
         <section class="footer">
             <div class="footer__title">
-                <h3>ohmyfood</h3>
+                <h4>ohmyfood</h4>
             </div>
             <div class="footer__list">
-                <ul>
-                    <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-                    <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                    <div class="footer__list__text">
+                        <i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a>
+                    </div>
+                    <div class="footer__list__text">
+                        <i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a>
+                    </div>
+                    <div class="footer__list__text">
+                        <a href="#">Mentions légales</a>
+                    </div>
+                    <div class="footer__list__text">
+                        <a href="mailto:ohmyfood@ohmyfood.com">Contact</a>
+                    </div>
             </div>
         </section>
     </footer>
