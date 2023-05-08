@@ -30,6 +30,7 @@ $green-color: #008766;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
             & i {
                 margin-left: 23px;
+                color: $black-color;
             }
             & img {
                 display: flex;
@@ -98,6 +99,29 @@ $green-color: #008766;
     }
     &__list__text {
         margin-top: 7px;
+    }
+}
+
+@mixin all-heart {
+    .heart__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        &--base {
+            position: absolute;
+        }
+        &--click {
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient($main-color, $second-color);
+            background-clip: text;
+            color: transparent;
+            transition: all 300ms;
+            &:active {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -179,7 +203,12 @@ h1 {
 
 button {
     @include all-button;
+    &:hover {
+        background: linear-gradient(lighten(rgba(147,86,220,1),5), lighten(rgba(255,121,218,1),5));
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+    }
 }
+
 
 .functioning {
     height: 440px;
@@ -324,6 +353,42 @@ button {
     font-size: 22px;
 }
 
+.heart__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    &--base {
+        position: absolute;
+    }
+    &--click {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient($main-color, $second-color);
+        background-clip: text;
+        color: transparent;
+        transition: all 300ms;
+        &:active {
+            opacity: 1;
+        }
+    }
+}
+
+.heart__main {
+top: 0px;
+right: 0px;
+}
+
+.heart__menus {
+    top: 51px;
+    right: 50px;
+}
+
+.content__card__txt {
+    position: relative;
+}
+
+
 .footer {
    @include all-footer;
 }
@@ -341,6 +406,7 @@ button {
 #pages {
     h1 {
         margin: 32px 0 40px 0;
+        position: relative;
     }
     h2 {
         display: inline-block;
@@ -388,9 +454,9 @@ button {
 
 .menu__restaurant {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 4px 0 4px;
+    margin: 0 28px 0 4px;
     padding-bottom: 0;
 }
 
