@@ -8,6 +8,111 @@ body {
   margin: 0;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.loader__txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__txt p {
+  font-family: "Shrikhand", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.loader__txt__one {
+  transform: rotateX(360deg);
+  animation: txt-appear 2s;
+}
+@keyframes txt-appear {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.loader__txt__two {
+  transform: rotateX(360deg);
+  animation: txt-appear 2s;
+  animation-delay: 0.5s;
+}
+@keyframes txt-appear {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.loader__txt__three {
+  transform: rotateX(360deg);
+  animation: txt-appear 2s;
+  animation-delay: 1s;
+}
+@keyframes txt-appear {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.loader__point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  gap: 30px;
+  font-size: 70px;
+}
+.loader__point__one {
+  color: #9356DC;
+  animation: circle 0.3s alternate 20;
+}
+@keyframes circle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+.loader__point__two {
+  color: #FF79DA;
+  animation: circle 0.3s alternate 20;
+  animation-delay: 0.1s;
+}
+@keyframes circle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+.loader__point__three {
+  color: #99E2D0;
+  animation: circle 0.3s alternate 20;
+  animation-delay: 0.2s;
+}
+@keyframes circle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -109,6 +214,7 @@ button {
   border-radius: 25px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
+  cursor: pointer;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -182,32 +288,33 @@ button:hover {
   margin: 0;
 }
 
-.restaurants__cards__link {
-  text-decoration: none;
-  color: black;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  width: 90.67%;
+.restaurants__card {
+  width: 100%;
   height: 251px;
-}
-.restaurants__cards__link__card {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   background-color: #FFFFFF;
   border-radius: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.restaurants__card__link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
-.restaurants__cards__link img {
+.restaurants__card img {
   object-fit: cover;
   box-sizing: border-box;
   width: 100%;
   height: 174px;
   border-radius: 15px 15px 0 0;
 }
-.restaurants__cards p {
+.restaurants__card p {
   margin-top: 5px;
-}
-
-.restaurants__card {
-  position: relative;
 }
 .restaurants__card__new {
   display: flex;
@@ -220,10 +327,10 @@ button:hover {
   color: #008766;
   font-size: 14px;
   font-weight: 500;
-  width: 21.34%;
   height: 29px;
   border-radius: 2px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 0 9px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .restaurants__card__content {
@@ -234,13 +341,7 @@ button:hover {
   border-radius: 0 0 15px 15px;
   background-color: #FFFFFF;
   display: flex;
-  align-items: center;
-  position: relative;
-}
-.restaurants__card__content i {
-  position: absolute;
-  right: 25px;
-  top: 23px;
+  flex-direction: column;
 }
 .restaurants__card__content h3 {
   margin-top: 16px;
@@ -252,6 +353,7 @@ button:hover {
   margin-bottom: 12px;
   font-size: 17px;
   font-weight: 300;
+  margin-top: 0;
 }
 
 .fa-heart {
@@ -275,22 +377,20 @@ button:hover {
   color: transparent;
   transition: all 300ms;
 }
-.heart__icons--click:active {
+.heart__icons--click:hover {
   opacity: 1;
 }
 
 .heart__main {
-  top: 0px;
-  right: 0px;
+  top: 206px;
+  right: 25px;
+  cursor: pointer;
 }
 
 .heart__menus {
   top: 51px;
   right: 50px;
-}
-
-.content__card__txt {
-  position: relative;
+  cursor: pointer;
 }
 
 .footer {
