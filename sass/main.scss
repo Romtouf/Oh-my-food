@@ -16,7 +16,7 @@ $black-color: black;
 $heart-color: #101010;
 $green-color: #008766;
 $anim-time-point: 1s;
-$anim-time-txt: 4s;
+$anim-time-txt: 2s;
 
 @mixin loader-txt {
     @keyframes txt {
@@ -186,7 +186,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: $grey-color;
-    animation: loader-stop 5.5s forwards;
+    animation: loader-stop 3s forwards;
     transform-origin: top;
     @keyframes loader-stop {
         0% {
@@ -238,20 +238,20 @@ body {
         &__one {
             color: $main-color;
             animation: point $anim-time-point;
-            animation-iteration-count: 4;
+            animation-iteration-count: 2;
             @include loader-point;
         }
         &__two {
             color: $second-color;
             animation: point $anim-time-point;
-            animation-iteration-count: 4;
+            animation-iteration-count: 2;
             animation-delay: 0.25s;
             @include loader-point;
         }
         &__three {
             color: $third-color;
             animation: point $anim-time-point;
-            animation-iteration-count: 4;
+            animation-iteration-count: 2;
             animation-delay: 0.5s;
             @include loader-point;
         }
