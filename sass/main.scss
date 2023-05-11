@@ -150,6 +150,20 @@ $anim-time-txt: 4s;
         }
     }
 
+@mixin check-menu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+    @media (max-width: 1440px) {
+
+    }
+
+    @media (max-width:1024px) {
+        
+    }
+
 @media (max-width:599px) {
 body {
     height: 100%;
@@ -553,46 +567,75 @@ button {
 .menu__card {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    overflow: hidden;
     margin-top: 12px;
     width: 100%;
     height: 69px;
     background-color: $white-color;
     border-radius: 15.0431px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-   
-    & h3 {
+    @include check-menu;
+    &:hover .menu__price {
+        margin-right: 0;
+    }
+    & h3 {width: 100%;
         margin: 0 0 5px 0;
         font-size: 18px;
         font-weight: 500;
+        @include check-menu;
     }
     & p {
+        width: 100%;
         margin: 0;
         font-size: 15.0431px;
+        @include check-menu;
     }
 }
 
 .menu__plate {
+    width: 289px;
     padding-left: 15px;
+    margin-top: 12px;
+    @include check-menu;
 }
 
 .menu__price {
-    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    margin-right: -59px;
+    &__euro {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
     font-size: 15.0341px;
     font-weight: 700;
-    width: 16.90%;
+    width: 41px;
     height: 69px;
+    padding-left: 7px;
+    
+    & p {
+        margin-bottom: 12px;
+        padding-right: 15px;
+    }
 }
-
-.menu__check {
-    width: 16.90%;
+    &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59px;
     height: 100%;
+    background-color: $third-color;
+    border-radius: 0 15px 15px 0;
+    & i {
+        color: $white-color;
+    }
+}
 }
 
-.menu__plate, .menu__price {
-    margin-bottom: 12px;
 
-}
 
 .menu__button {
     display: flex;
