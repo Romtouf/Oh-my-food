@@ -113,7 +113,11 @@ $anim-time-menu: 1s;
         cursor: pointer;
         border: none;
         @include sixteen-roboto (500);
+        &:hover {
+            background: linear-gradient(lighten(rgba(147,86,220,1),5), lighten(rgba(255,121,218,1),5));
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
     }
+}
 
 @mixin delay-menu-appear {
     @keyframes delay-menu {
@@ -131,7 +135,7 @@ $anim-time-menu: 1s;
 }
 
 @mixin all-footer {
-    @media (min-width:599.01px) and (max-width: 1024px) {
+    @media (min-width:823.01px) and (max-width: 1024px) {
       display: flex;
       flex-direction:row-reverse;
       align-items: center;
@@ -139,7 +143,8 @@ $anim-time-menu: 1s;
       background-color: $grey-dark;
       color: $white-color;
       & h4 {
-           @include all-footer; 
+           @include footer-title (18px);
+           margin-left: 15px;
       }
       &__list {
         display: flex;
@@ -153,7 +158,7 @@ $anim-time-menu: 1s;
         }
         &__text__one {
             display: flex;
-            width: 190px;                           /* à reprendre */
+            width: 190px;                          /* modifié */
             @include sixteen-roboto(500);
         }
         &__text__two {
@@ -162,7 +167,7 @@ $anim-time-menu: 1s;
         }
       }
     }
-    @media (max-width: 599px) {
+    @media (max-width: 823px) {
     display: flex;
     flex-direction: column;
     padding: 22px 25px;
@@ -216,9 +221,6 @@ $anim-time-menu: 1s;
     white-space: nowrap;
 }
 
-    @media (max-width: 1440px) {
-
-    }
 
 //** Version tablette **//
     @media (max-width:1024px) {
@@ -602,21 +604,24 @@ $anim-time-menu: 1s;
                 }
             }
         }
+
         
         .menu {
             & img {
                 width: 100%;
-                height: 275px;
+                height: 300px; /* modifié */
             }
             &__cards {
                 display: flex;
                 flex-direction: column;
+                justify-content: center; /* modifié */
                 position: relative;
                 margin-top: -60px;
-                padding: 0 13px 40px 13px;
+                margin-left: 10%;
+                padding: 0 80px 40px 80px; /* modifié */
                 background-color: $grey-color-menus;
                 border-radius: 40px 40px 0 0;
-                width: 100%;
+                width: 80%; /* modifié */
                 box-sizing: border-box;
             }
         }
@@ -948,10 +953,6 @@ h1 {
 
 button {
     @include all-button (218px);
-    &:hover {
-        background: linear-gradient(lighten(rgba(147,86,220,1),5), lighten(rgba(255,121,218,1),5));
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-    }
 }
 
 
@@ -1174,6 +1175,7 @@ button {
         border-radius: 40px 40px 0 0;
         width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
     }
 }
 

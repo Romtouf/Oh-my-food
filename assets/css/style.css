@@ -266,6 +266,10 @@
     background: linear-gradient(#a16be0, #ff93e1);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
   }
+  button:hover {
+    background: linear-gradient(#a16be0, #ff93e1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  }
   .functioning {
     width: 100%; /* modifié */
     height: 228.38px; /* modifié */
@@ -441,7 +445,7 @@
   }
   /***** Pages *****/
 }
-@media (max-width: 1024px) and (min-width: 599.01px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 823.01px) and (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -449,6 +453,12 @@
     padding: 57px 26.42px 30px 200px;
     background-color: #353535;
     color: #FFFFFF;
+  }
+  .footer h4 {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
   }
   .footer__list {
     display: flex;
@@ -462,7 +472,7 @@
   }
   .footer__list__text__one {
     display: flex;
-    width: 190px; /* à reprendre */
+    width: 190px; /* modifié */
     font-weight: 500;
     font-size: 16px;
   }
@@ -472,7 +482,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 1024px) and (max-width: 599px) {
+@media (max-width: 1024px) and (max-width: 823px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -534,17 +544,19 @@
   }
   .menu img {
     width: 100%;
-    height: 275px;
+    height: 300px; /* modifié */
   }
   .menu__cards {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* modifié */
     position: relative;
     margin-top: -60px;
-    padding: 0 13px 40px 13px;
+    margin-left: 10%;
+    padding: 0 80px 40px 80px; /* modifié */
     background-color: #F6F6F6;
     border-radius: 40px 40px 0 0;
-    width: 100%;
+    width: 80%; /* modifié */
     box-sizing: border-box;
   }
   .menu__block__entrees, .menu__block__plats, .menu__block__desserts {
@@ -771,8 +783,12 @@
     font-size: 16px;
     /* modifié */
   }
+  .menu__button button:hover {
+    background: linear-gradient(#a16be0, #ff93e1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  }
 }
-@media (max-width: 1024px) and (min-width: 599.01px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 823.01px) and (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -780,6 +796,12 @@
     padding: 57px 26.42px 30px 200px;
     background-color: #353535;
     color: #FFFFFF;
+  }
+  .footer h4 {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
   }
   .footer__list {
     display: flex;
@@ -793,7 +815,7 @@
   }
   .footer__list__text__one {
     display: flex;
-    width: 190px; /* à reprendre */
+    width: 190px; /* modifié */
     font-weight: 500;
     font-size: 16px;
   }
@@ -803,7 +825,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 1024px) and (max-width: 599px) {
+@media (max-width: 1024px) and (max-width: 823px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -1265,7 +1287,7 @@
   }
   /***** Pages *****/
 }
-@media (max-width: 599px) and (min-width: 599.01px) and (max-width: 1024px) {
+@media (max-width: 599px) and (min-width: 823.01px) and (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -1273,6 +1295,12 @@
     padding: 57px 26.42px 30px 200px;
     background-color: #353535;
     color: #FFFFFF;
+  }
+  .footer h4 {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
   }
   .footer__list {
     display: flex;
@@ -1286,7 +1314,7 @@
   }
   .footer__list__text__one {
     display: flex;
-    width: 190px; /* à reprendre */
+    width: 190px; /* modifié */
     font-weight: 500;
     font-size: 16px;
   }
@@ -1296,7 +1324,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 599px) and (max-width: 599px) {
+@media (max-width: 599px) and (max-width: 823px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -1370,6 +1398,7 @@
     border-radius: 40px 40px 0 0;
     width: 100%;
     box-sizing: border-box;
+    margin-left: 0;
   }
   .menu__block__entrees, .menu__block__plats, .menu__block__desserts {
     margin-bottom: 40px;
@@ -1594,8 +1623,12 @@
     font-weight: 500;
     font-size: 16px;
   }
+  .menu__button button:hover {
+    background: linear-gradient(#a16be0, #ff93e1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  }
 }
-@media (max-width: 599px) and (min-width: 599.01px) and (max-width: 1024px) {
+@media (max-width: 599px) and (min-width: 823.01px) and (max-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -1603,6 +1636,12 @@
     padding: 57px 26.42px 30px 200px;
     background-color: #353535;
     color: #FFFFFF;
+  }
+  .footer h4 {
+    font-family: "Shrikhand", cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
   }
   .footer__list {
     display: flex;
@@ -1616,7 +1655,7 @@
   }
   .footer__list__text__one {
     display: flex;
-    width: 190px; /* à reprendre */
+    width: 190px; /* modifié */
     font-weight: 500;
     font-size: 16px;
   }
@@ -1626,7 +1665,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 599px) and (max-width: 599px) {
+@media (max-width: 599px) and (max-width: 823px) {
   .footer {
     display: flex;
     flex-direction: column;
