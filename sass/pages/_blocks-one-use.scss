@@ -43,9 +43,14 @@
     }
 
     .heart__main {
-        top: 206px;
-        right: 25px;
-         cursor: pointer;
+        top: 202px;
+        right: 37px;
+        cursor: pointer;
+        position: absolute;
+        @media (max-width: 1024px) {
+            top: 206px;
+            right: 25px;
+        }
     }
 }
 

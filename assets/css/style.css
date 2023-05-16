@@ -1071,9 +1071,16 @@
     color: #FFFFFF;
   }
   .heart__main {
+    top: 202px;
+    right: 37px;
+    cursor: pointer;
+    position: absolute;
+  }
+}
+@media (max-width: 1900px) and (max-width: 1024px) {
+  .heart__main {
     top: 206px;
     right: 25px;
-    cursor: pointer;
   }
 }
 /* Tablette one-use */
