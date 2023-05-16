@@ -1,7 +1,6 @@
 /* mobile reused */
 
 @media (max-width: 599px) {
-
     .functioning {
         height: 440px;  
         &__block {
@@ -20,6 +19,7 @@
             }
         }
     }
+
     .restaurants {
         height: 1226px;
         &__title {
@@ -35,19 +35,20 @@
     }
     
     .restaurants__card {
-            width: 100%;          
-        }
+        width: 100%;          
+    }
     
     /***** Pages *****/
+    
     #pages {
         & h1 {
             margin: 32px 0 40px 0; 
         }
     }
+
     .heart__menus {
         right: 50px;
     }
-    
     
     .menu {
         & img {
@@ -59,4 +60,4 @@
             margin-left: 0;
         }
     }
-    }
+}

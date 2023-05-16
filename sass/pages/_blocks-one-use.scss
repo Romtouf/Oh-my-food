@@ -3,12 +3,13 @@
 /* blocks-one-use */
 
 /* desktop */
-@media (max-width: 1900px) {
 
+@media (max-width: 1900px) {
 /* main */
     .display__none i {
         visibility: hidden;
     }
+    
     .explore__title__font, .functioning__title__font, .restaurants__title__font {
         @include accueil-title;
     }
@@ -27,11 +28,11 @@
             }
         }
         & p {
-                font-family: $main-font;
-                font-size: 18px;
-                font-weight: 300;
-                margin: 0;
-            }
+            font-family: $main-font;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 0;
+        }
         &__content {
             margin: 0 26px 27px 34px;
         }
@@ -45,8 +46,8 @@
         top: 206px;
         right: 25px;
          cursor: pointer;
-     }
     }
+}
 
 
 

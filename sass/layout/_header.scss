@@ -1,12 +1,12 @@
 /* header */
 
 @media (max-width: 1900px) {
-.navbar {
-    @include navigation(94px); 
-    &__logo {
-     height: 96px;
+    .navbar {
+        @include navigation(94px); 
+        &__logo {
+            height: 96px;
+        }
     }
- }
 }
 
 @media (max-width: 599px) {

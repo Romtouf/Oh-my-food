@@ -1,7 +1,6 @@
 /* pages restaurants */
 
 @media (max-width: 1900px) {
-
     #pages {
         h1 {
             margin: 32px 0 40px -20px;
@@ -73,8 +72,7 @@
         margin: 0 28px 0 4px;
         padding-bottom: 0;
     }
-
-    
+   
     .menu__card {
         display: flex;
         justify-content: space-between;
@@ -90,9 +88,9 @@
         &:hover .menu__price {
             margin-right: 0;
             transition-duration: 0.7s;
-        
         }
-        & h3 {width: 100%;
+        & h3 {
+            width: 100%;
             margin: 0 0 5px 0;
             font-size: 18px;
             @include font-weight-500;
@@ -121,35 +119,33 @@
         height: 100%;
         margin-right: -59px;
         &__euro {
-        display: flex;
-        justify-content: flex-end;
-        align-items: end;
-        font-size: 15.0341px;
-        font-weight: 700;
-        width: 41px;
-        height: 69px;
-        padding-left: 7px;
-        
-        & p {
-            margin-bottom: 12px;
-            padding-right: 15px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: end;
+            font-size: 15.0341px;
+            font-weight: 700;
+            width: 41px;
+            height: 69px;
+            padding-left: 7px;    
+            & p {
+                margin-bottom: 12px;
+                padding-right: 15px;
+            }
         }
-    }
         &__check {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 59px;
-        height: 100%;
-        background-color: $third-color;
-        border-radius: 0 15px 15px 0;
-        & i {
-            color: $white-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 59px;
+            height: 100%;
+            background-color: $third-color;
+            border-radius: 0 15px 15px 0;
+            & i {
+                color: $white-color;
+            }
         }
     }
-    }
-
-    
+  
     /* animation menus */
     .menu__delay__1 {
         @include delay-menu-anim;

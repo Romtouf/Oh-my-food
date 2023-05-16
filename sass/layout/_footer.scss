@@ -1,8 +1,7 @@
 /* footer */
 
 @media (max-width: 1900px) {
-
-.footer {
-    @include all-footer;
- }
+    .footer {
+        @include all-footer;
+    }
 }

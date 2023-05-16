@@ -18,8 +18,8 @@ button {
 .menu__button {
     display: flex;
     justify-content: center;
-    & button {
-        @include all-button (186px); /* modifié */
+        & button {
+            @include all-button (186px); /* modifié */
+        }
     }
-}
 }
