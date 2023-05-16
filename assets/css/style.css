@@ -629,7 +629,7 @@
 /* pages restaurants */
 @media (max-width: 1900px) {
   #pages h1 {
-    margin: 32px 0 40px -20px;
+    margin: 32px 24px 40px -20px;
     position: relative;
   }
   #pages h2 {
@@ -659,8 +659,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 24px;
     top: 40px;
+    margin: 0;
   }
   .menu__cards {
     display: flex;
