@@ -1,0 +1,212 @@
+/* pages restaurants */
+
+@media (max-width: 1900px) {
+
+    #pages {
+        h1 {
+            margin: 32px 0 40px -20px;
+            position: relative;
+        }
+        h2 {
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 0;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 30px;
+                left: 0;
+                height: 3px;
+                width: 40px;
+                background-color: $third-color;
+            }
+        }
+    }
+
+    .heart__menus {
+        cursor: pointer;
+    }
+
+    .menu {
+        & img {
+            width: 100%;
+            height: 300px; /* modifié */
+        }
+        & i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 24px;
+            top: 40px;
+        }
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* modifié */
+            position: relative;
+            margin-top: -60px;
+            margin-left: 10%;
+            padding: 0 80px 40px 80px; /* modifié */
+            background-color: $grey-color-menus;
+            border-radius: 40px 40px 0 0;
+            width: 80%; /* modifié */
+            box-sizing: border-box;
+        }
+    }
+    
+    .menu__block__entrees, .menu__block__plats, .menu__block__desserts {
+        margin-bottom: 40px;
+        padding-left: 210px;
+        padding-right: 210px;
+        @media (min-width: 1024.01px) and (max-width: 1225px) {
+            padding-left: 125px;
+            padding-right: 125px;
+        }
+    }
+    
+    .menu__restaurant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 28px 0 4px;
+        padding-bottom: 0;
+    }
+
+    
+    .menu__card {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        cursor: pointer;
+        margin-top: 12px;
+        width: 100%;
+        height: 69px;
+        background-color: $white-color;
+        border-radius: 15.0431px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        @include check-menu;
+        &:hover .menu__price {
+            margin-right: 0;
+            transition-duration: 0.7s;
+        
+        }
+        & h3 {width: 100%;
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            @include font-weight-500;
+            @include check-menu;
+        }
+        & p {
+            width: 100%;
+            margin: 0;
+            font-size: 15.0431px;
+            @include check-menu;
+        }
+    }
+    
+    .menu__plate {
+        width: 289px;
+        padding-left: 15px;
+        margin-top: 12px;
+        @include check-menu;
+    }
+    
+    .menu__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100%;
+        margin-right: -59px;
+        &__euro {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        font-size: 15.0341px;
+        font-weight: 700;
+        width: 41px;
+        height: 69px;
+        padding-left: 7px;
+        
+        & p {
+            margin-bottom: 12px;
+            padding-right: 15px;
+        }
+    }
+        &__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 59px;
+        height: 100%;
+        background-color: $third-color;
+        border-radius: 0 15px 15px 0;
+        & i {
+            color: $white-color;
+        }
+    }
+    }
+
+    
+    /* animation menus */
+    .menu__delay__1 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+    }
+    
+    .menu__delay__2 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.1s; 
+    }
+    
+    .menu__delay__3 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.2s;
+    }
+    
+    .menu__delay__4 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.3s;
+    }
+    
+    .menu__delay__5 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.4s;
+    }
+    
+    .menu__delay__6 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.5s;
+    }
+    
+    .menu__delay__7 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.6s;
+    }
+    
+    .menu__delay__8 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.7s;
+    }
+    
+    .menu__delay__9 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.8s;
+    }
+    
+    .menu__delay__10 {
+        @include delay-menu-anim;
+        @include delay-menu-appear;
+        animation-delay: 0.9s;
+    }
+}

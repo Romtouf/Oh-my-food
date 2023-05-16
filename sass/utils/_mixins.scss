@@ -1,0 +1,243 @@
+/* mixins */
+
+@mixin loader-txt {
+    @keyframes txt {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+}
+
+@mixin loader-point {
+    @keyframes point {
+        0% {
+         transform: scale(1);
+     }
+         50% {
+             transform: scale(1.5);
+         }
+     100% {
+         transform: scale(1);
+     }
+     }
+}
+
+
+@mixin navigation ($height-navbar) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: $height-navbar;
+            margin-bottom: 2px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            & i {
+                position: absolute;
+                top: 24px;
+                left: 23px;
+                color: $black-color;
+                @media (min-width: 599.01px) and (max-width: 1900px) {
+                    top: 40px;
+                }
+            }
+            & img {
+                display: flex;
+                justify-content: center;
+                width: 43.2%;
+                @media (min-width: 1024.01px) and (max-width: 1900px) {
+                    width: 13.89%;
+                }
+            }
+        }
+    } 
+}
+
+
+@mixin font-weight-500 {
+    font-weight: 500;
+}
+
+@mixin sixteen-roboto ($weight) {
+    font-weight: $weight;
+    font-size: 16px;
+}
+
+@mixin accueil-title {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@mixin title-h1 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+@mixin footer-title ($size-footer) {
+    font-family: $second-font;
+    font-size: $size-footer;
+    font-weight: 400;
+}
+
+@mixin all-button ($width-button) {
+        background: linear-gradient(rgba(147,86,220,1), rgba(255,121,218,1));
+        width: $width-button;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        color: $white-color;
+        cursor: pointer;
+        border: none;
+        @include sixteen-roboto (500);
+        &:hover {
+            background: linear-gradient(lighten(rgba(147,86,220,1),5), lighten(rgba(255,121,218,1),5));
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@mixin delay-menu-appear {
+    @keyframes delay-menu {
+        from {
+            transform: translateX(-2000px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}
+
+@mixin delay-menu-anim {
+    animation: delay-menu 0.5s;
+}
+
+@mixin all-footer {
+    @media (min-width:1024.01px) and (max-width: 1900px) {
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        height: 114px;
+        padding: 57px 26.42px 30px 200px;
+        background-color: $grey-dark;
+        color: $white-color;
+        & h4 {
+             @include footer-title (18px);
+             margin-left: 15px;
+        }
+        &__list {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+         
+          & a {
+              display: inline-block;
+              text-decoration: none;
+              color: $white-color;
+          }
+          &__text__one {
+              display: flex;
+              width: 190px;                          /* modifié */
+              @include sixteen-roboto(500);
+          }
+          &__text__two {
+              width: 130px;
+              @include sixteen-roboto (400);
+          }
+        }
+      }
+    @media (min-width:823.01px) and (max-width: 1024px) {
+      display: flex;
+      flex-direction:row-reverse;
+      align-items: center;
+      height: 114px;
+      padding: 57px 26.42px 30px 200px;
+      background-color: $grey-dark;
+      color: $white-color;
+      & h4 {
+           @include footer-title (18px);
+           margin-left: 15px;
+      }
+      &__list {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+       
+        & a {
+            display: inline-block;
+            text-decoration: none;
+            color: $white-color;
+        }
+        &__text__one {
+            display: flex;
+            width: 190px;                          /* modifié */
+            @include sixteen-roboto(500);
+        }
+        &__text__two {
+            width: 130px;
+            @include sixteen-roboto (400);
+        }
+      }
+    }
+    @media (max-width: 823px) {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    background-color: $grey-dark;
+    color: $white-color;
+    & h4 {
+        @include footer-title (18px);
+        margin: 0 0 9px 0;
+    }
+    & a {
+        text-decoration: none;
+        color: $white-color;
+    }
+    &__title {
+    margin: 0;
+    }
+    &__list__text {
+        margin-top: 7px;
+        &__one a {
+            @include sixteen-roboto(500);
+        }
+        &__two a {
+            @include sixteen-roboto (400);
+        }
+    }
+    
+    }    
+}
+
+
+@mixin all-heart {
+        &--base {
+            position: absolute;
+        }
+        &--click {
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient($main-color, $second-color);
+            background-clip: text;
+            color: transparent;
+            transition: all 0.6s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+@mixin check-menu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

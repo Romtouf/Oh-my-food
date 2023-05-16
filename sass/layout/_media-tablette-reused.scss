@@ -1,0 +1,106 @@
+/* tablette reused */
+
+//** Version tablette **//
+@media (max-width:1024px) {    
+    .functioning {
+        padding: 0;
+        &__title {
+            padding: 50px 80px 25px 20px; /* modifié */
+        }
+        &__list {
+            width: 26.45%; /* modifié */       
+            margin: 0 20px 24.94px 32.51px;          
+        }
+        &__block { /* modifié */        
+            justify-content: center;        
+            gap: 0;
+            margin-left: 0;
+        }
+    }
+            
+   
+    
+    /***** pages restaurants *****/
+    
+    #pages {
+        & h1 {
+            margin: 32px 0 40px 0; 
+        }
+    }
+
+    .heart__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .heart__menus {
+        top: 40px;
+        right: 109px;
+        cursor: pointer;
+    }
+
+    .menu i {
+        margin: 0;
+        top: 0;
+    }
+            
+    .menu__restaurant {
+        justify-content: space-between;
+    }
+
+    .menu__block__entrees, .menu__block__plats, .menu__block__desserts {
+        padding-left: 0;
+        padding-right: 0;
+    }
+      
+}
+
+// ** versions intermédiaires mobile -> tablette **//
+
+@media (min-width: 880.01px) and (max-width: 945.99px) {
+    
+    .functioning__list__txt__one {
+            margin-left: 5px;
+        }
+    .functioning__list__txt__two {
+            margin-left: 5px;
+        }
+    .functioning__list__txt__three {
+            margin-left: 5px;
+        }
+}
+
+@media (min-width: 599.01px) and (max-width: 880px) {
+   
+    .functioning {
+        height: 440px;
+        &__title {
+            padding: 48px 80px 26px 20px;
+        }
+        &__block {
+          
+            flex-direction: column;
+    
+        }
+        &__list {
+            width: 86%; /* modifié */
+            margin: 0 20px 24.94px 32.51px;
+            
+            &__number {
+                right: 98.2%; /* modifié */
+            }
+        }
+    }
+    
+    .menu__cards {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .menu__block__entrees, .menu__block__plats, .menu__block__desserts {
+        margin-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    }

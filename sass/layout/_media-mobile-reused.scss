@@ -1,0 +1,62 @@
+/* mobile reused */
+
+@media (max-width: 599px) {
+
+    .functioning {
+        height: 440px;  
+        &__block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__list {
+            width: 86%;     
+            margin: 0 20px 24.94px 32.51px;       
+            &__number {
+                @media (min-width: 440px) and (max-width: 598.99px) {
+                    right: 97.2%;
+                }
+            }
+        }
+    }
+    .restaurants {
+        height: 1226px;
+        &__title {
+            padding: 54px 80px 26px 0;
+            & h2 {
+                margin: 0;
+            }
+        }
+        &__cards {
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+    
+    .restaurants__card {
+            width: 100%;          
+        }
+    
+    /***** Pages *****/
+    #pages {
+        & h1 {
+            margin: 32px 0 40px 0; 
+        }
+    }
+    .heart__menus {
+        right: 50px;
+    }
+    
+    
+    .menu {
+        & img {
+            height: 275px;
+        }
+        &__cards {
+            padding: 0 13px 40px 13px;      
+            width: 100%;     
+            margin-left: 0;
+        }
+    }
+    }

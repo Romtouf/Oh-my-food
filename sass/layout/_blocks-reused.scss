@@ -1,0 +1,214 @@
+/* blocks-reused */
+
+/* all pages */
+
+@media (max-width: 1900px) {
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey-color;
+        height: 50px;
+        @include sixteen-roboto (500);
+        &__input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & i {
+            margin-right: 17px;
+        }
+        &__place {
+            width: 45%;
+            border: none;
+            background-color: $grey-color;
+        }
+        ::placeholder {
+            color: $black-color;
+            opacity: 1;
+        }
+    }
+
+    h1 {
+        @include title-h1;
+    }
+
+    .functioning {
+        width: 100%; 
+        height: 228.38px;
+        padding: 0 180px 50px 180px;
+        @media (min-width: 1024.01px) and (max-width: 1225px) {
+            padding: 0 70px 50px 70px;
+        }
+        &__title {
+            padding: 50px 0 25px 8px; /* modifié */
+            & h2 {
+                margin: 0;
+            }
+        }
+        &__list {
+            width: 21.39%; /* modifié */
+            @media (min-width: 1024.01px) and (max-width: 1225px) {
+                width: 25%;
+            }
+
+            height: 72.38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            background-color: $grey-light-color;
+            margin: 0; /* modifié */
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+            &__txt__one {
+                margin-left: 27px;
+                @include font-weight-500;
+            }
+            &__txt__two {
+                margin: 23px;
+                @include font-weight-500;
+            }
+            &__txt__three {
+                margin: 20px;
+                @include font-weight-500;
+            }
+            &__number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 96.2%;
+                background-color: $main-color;
+                color: $white-color;
+                border-radius: 25px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        &__block { /* modifié */
+            display: flex;
+            align-items: center;
+            margin-left: 22px; /* modifié */
+            gap: 47px; /* modifié */
+            @media (min-width: 1024.01px) and (max-width: 1225px) {
+                gap: 27px;
+            }
+        }
+    }
+
+    .fa-store {
+        color: $main-color;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        height: 668px; 
+        padding: 0 175.68px 20px 175.68px; /* modifié */
+        @media (min-width: 1024.01px) and (max-width: 1225px) {
+            padding: 0 70px 42px 70px;
+        }
+        background-color: $grey-light-color;
+        &__title {
+            display: flex;
+            padding: 30px 80px 28px 0; /* modifié */
+            & h2 {
+                margin-left: 11px; /* modifié */
+            }
+        }
+        &__cards { /* modifié */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* modifié */
+        }
+    }
+    
+    .restaurants__card {
+            width: 47.85%; /* modifié */
+            height: 251px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: $white-color;
+            border-radius: 15px;
+            position: relative;
+            &__link {
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                color: $black-color;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+            }
+            & img {
+                object-fit: cover;
+                box-sizing: border-box;
+                width: 100%;
+                height: 174px;
+                border-radius: 15px 15px 0 0;
+            }
+            & p {
+                margin-top: 5px;
+            }
+            &__new {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 20px;
+                right: 15px;
+                background-color: $third-color;
+                color: $green-color;
+                font-size: 14px;
+                @include font-weight-500;
+                height: 29px;
+                border-radius: 2px;
+                padding: 0 9px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            }
+        }
+    
+    .restaurants__card__content {
+        height: 77px;
+        padding-left: 13px;
+        margin-top: -5px;
+        border-radius: 0 0 15px 15px;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        & h3 {
+            margin-top: 16px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        & p {
+            margin-bottom: 12px;
+            font-size: 17px;
+            font-weight: 300;
+            margin-top: 0;
+        }    
+    }
+
+    .fa-utensils {
+        margin-right: 11px;
+    }
+    
+    .fa-handshake-angle {
+        margin-right: 5px;
+    }
+    
+    .fa-heart {
+        font-size: 22px;
+    }
+
+    .heart__icons {
+        @include all-heart;
+    }
+
+
+}

@@ -1,0 +1,87 @@
+/* loader */
+
+@media (max-width: 1900px) {
+    .loader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+     
+        z-index: 1000;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        background-color: $grey-color;
+        animation: loader-stop 3s forwards;
+        transform-origin: top;
+        @keyframes loader-stop {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1);
+            }
+            90% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+        
+        &__txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & p {
+            font-family: $second-font;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            }
+            &__one {
+                animation: txt $anim-time-txt linear;
+                @include loader-txt;
+            }
+            &__two {
+                animation: txt $anim-time-txt linear;
+                animation-delay: 0.25s;
+                @include loader-txt;
+            }
+            &__three {
+                animation: txt $anim-time-txt linear;
+                animation-delay: 0.5s;
+                @include loader-txt;
+            }
+        }
+        &__point {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            gap: 30px;
+            font-size: 70px;
+            &__one {
+                color: $main-color;
+                animation: point $anim-time-point;
+                animation-iteration-count: 2;
+                @include loader-point;
+            }
+            &__two {
+                color: $second-color;
+                animation: point $anim-time-point;
+                animation-iteration-count: 2;
+                animation-delay: 0.25s;
+                @include loader-point;
+            }
+            &__three {
+                color: $third-color;
+                animation: point $anim-time-point;
+                animation-iteration-count: 2;
+                animation-delay: 0.5s;
+                @include loader-point;
+            }
+        }
+    }
+}

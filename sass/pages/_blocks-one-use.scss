@@ -1,0 +1,53 @@
+/* blocks-one-use */
+
+/* blocks-one-use */
+
+/* desktop */
+@media (max-width: 1900px) {
+
+/* main */
+    .display__none i {
+        visibility: hidden;
+    }
+    .explore__title__font, .functioning__title__font, .restaurants__title__font {
+        @include accueil-title;
+    }
+
+    .explore {
+        text-align: center;
+        height: 239px; 
+        background-color: $grey-light-color;
+        &__title {
+            padding: 39.5px 58px 15px 42px;
+            & h1 {
+                margin: 0;
+            }
+            &--font {
+                margin: 0;
+            }
+        }
+        & p {
+                font-family: $main-font;
+                font-size: 18px;
+                font-weight: 300;
+                margin: 0;
+            }
+        &__content {
+            margin: 0 26px 27px 34px;
+        }
+        &__research a {
+            text-decoration: none;
+            color: $white-color;
+        }
+    }
+
+    .heart__main {
+        top: 206px;
+        right: 25px;
+         cursor: pointer;
+     }
+    }
+
+
+
+
