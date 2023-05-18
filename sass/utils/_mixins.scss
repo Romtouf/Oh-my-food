@@ -220,8 +220,8 @@
     &--click {
         position: absolute;
         opacity: 0;
-        background: linear-gradient($main-color, $second-color);
-        background-clip: text;
+        background: -webkit-linear-gradient($main-color, $second-color);
+        -webkit-background-clip: text;
         color: transparent;
         transition: all 0.6s;
         &:hover {

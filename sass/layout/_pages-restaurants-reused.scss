@@ -31,7 +31,8 @@
     .menu {
         & img {
             width: 100%;
-            height: 300px; /* modifié */
+            height: 360px; /* modifié */
+            object-fit: cover;
         }
         & i {
             display: flex;
@@ -45,7 +46,7 @@
             flex-direction: column;
             justify-content: center; /* modifié */
             position: relative;
-            margin-top: -60px;
+            margin-top: -40px; /* modifié */
             margin-left: 10%;
             padding: 0 80px 40px 80px; /* modifié */
             background-color: $grey-color-menus;
