@@ -7,10 +7,6 @@
     
 button {
     @include all-button (218px); 
-    &:hover {
-        background: linear-gradient(lighten(rgba(147,86,220,1),5), lighten(rgba(255,121,218,1),5));
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-    }
 }
 
 /* pages restaurants */
